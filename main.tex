@@ -26,6 +26,11 @@
 \usepackage{import}
 \usepackage{xstring}
 
+\usepackage{url}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
 \def\FormatName#1{%
   \IfSubStr{#1}{Zhang}{\textbf{#1}}{#1}%
 }
@@ -121,15 +126,15 @@
 
 \vspace{3pt}
 
-\small{Description}}
+\small{I am developing a Bayesian model for probabilistically assigning cells in single cell RNA-seq data to known cell types based on marker genes.}}
 
 \vspace{6pt}
 
-\item{\textbf{MD/PhD Project (Ongoing):} \textit{'Interfaces of malignant and immunologic clonal dynamics in high-grade serous ovarian cancer'}
+\item{\textbf{MD/PhD Project:} \textit{'Interfaces of malignant and immunologic clonal dynamics in high-grade serous ovarian cancer'}
 
 \vspace{3pt}
 
-\small{Description}}
+\small{I led a multi-national collaboration to establish the evolutionary interplay between lymphocytes and tumour cells in high-grade serous ovarian cancer by multimodal data analysis. Integrating whole-genome sequencing analysis of clonal composition, histologic imaging data, immunohistochemistry measurements, T- and B-cell receptor sequencing, and mutational signature analysis, we reported an evolutionary interplay between the immune microenvironment and tumour clones in \emph{Cell} (senior authors: Dr. Sohrab Shah and Dr. Brad Nelson). I was responsible for co-ordinating the study and the majority of computational analysis.}}
 
 \vspace{6pt}
 
@@ -137,7 +142,7 @@
 
 \vspace{3pt}
 
-\small{Description}}
+\small{I developed and applied methods to predict the effect of \emph{cis}-regulatory somatic variants in B-cell lymphomas on transcription factor binding sites. These predictions were used by Dr. Anthony Mathelier and Calvin Lefebvre to associate regulatory variants with alterations in gene expression. This work was published in \emph{Genome Biology}.}}
 
 \vspace{6pt}
 
@@ -145,7 +150,7 @@
 
 \vspace{3pt}
 
-\small{Description}}
+\small{I developed computational methods to predict the effect of \emph{cis}-regulatory variants within transcription factor binding sites on transcription factor binding affinity. The optimizations I introduced sped up the algorithm by 4-5 orders of magnitude, allowing for a single whole genome to be processed in a few hours. This method was used to generate the predictions in the MANTA database and its successor MANTA2 (published in \emph{Scientific Data}).}}
 
 
 \end{itemize}
@@ -189,6 +194,15 @@
 \nocite{*}
 \bibliographystyle{plainyrres}
 \bibliography{selectedpubs}
+
+\section{News Releases}
+
+\vspace{6pt}
+
+\begin{itemize}
+    \item{\cventry{May 2018}{BC Cancer \& UBC Medicine}{“Arms race” between cancer and immune system revealed}{Vancouver, Canada}{}{\url{https://www.med.ubc.ca/ubc-scientists-uncover-evolutionary-arms-race-between-cancer-and-immune-system/}, \url{https://bccancerfoundation.com/about-us/news/scientists-uncover-\%E2\%80\%9Cevolutionary-arms-race\%E2\%80\%9D-between-cancer-and-immune-system}}}
+    \item{\cventry{September 2014}{UBC Medicine}{An injection of youth}{Vancouver, Canada}{}{\url{https://www.med.ubc.ca/an-injection-of-youth/}}}
+\end{itemize}
 
 \section{Presentations}
 
