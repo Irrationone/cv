@@ -1,0 +1,313 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{xstring}
+
+\def\FormatName#1{%
+  \IfSubStr{#1}{Zhang}{\textbf{#1}}{#1}%
+}
+
+\newcommand*{\keysocialsymbol}{{\small\faKey}~}
+
+% personal data
+\name{Allen W}{Zhang}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{my address, line 1, line 2, line 3, postcode}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1 917 913 1779}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{allenz9410[at]gmail.com}                               % optional, remove / comment the line if not wanted
+\social[github]{Irrationone}
+%\homepage{www.myname.webs.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\small{MD/PhD Candidate at the University of British Columbia, currently based at Memorial Sloan Kettering Cancer Center. Bioinformatics researcher and Vanier scholar with interests in cancer immunology, single cell transcriptomics, and ovarian cancer.}
+
+\section{Previous Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{September 2018--present}{Graduate Research Assistant}{Memorial Sloan Kettering Cancer Center}{New York}{Shah Lab}{\vspace{3pt}I am undertaking a research exchange during my MD/PhD degree to acquire experience conducting clinical trials analysis in ovarian cancer immunotherapy.}}
+
+\vspace{6pt}
+
+\item{\cventry{September 2015--May 2016}{Work Learn Student}{Armstrong Lab}{Vancouver, Canada}{}{\vspace{3pt}I developed a genetics module on cancer exome analysis for UBC Medical School's curriculum renewal with Dr. Linlea Armstrong.}}
+
+\vspace{6pt}
+
+\item{\cventry{September 2012--August 2013}{Bioinformatics Analyst}{Centre for Molecular Medicine and Therapeutics}{Vancouver}{Wasserman Lab}{\vspace{3pt}Developed software for transcription factor binding site prediction (MANTA) and the 2014 release of JASPAR, the largest freely-accessible database of high-quality transcription factor binding sites.}}
+
+\vspace{6pt}
+
+\item{\cventry{May 2012--August 2012}{NSERC Summer Student}{University of British Columbia}{Vancouver}{Wasserman Lab}{\vspace{3pt}Developed fast computational methods for identification of transcription factor binding sites in whole-genome sequence data.}}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{2014--present}{MD/PhD Candidate, Bioinformatics}{University of British Columbia}{Vancouver}{GPA: 97\%}{}}
+
+\item{\cventry{2013--2014}{MD Candidate}{University of British Columbia}{Vancouver}{}{}}
+
+\item{\cventry{2010--2013}{Combined Honours, Computer Science and Biology}{University of British Columbia}{Vancouver}{GPA: 95.3\%}{}}
+
+\item{\cventry{2010--2011}{Science One}{University of British Columbia}{Vancouver}{GPA: 96\%, Top Student}{}}
+
+\item{\cventry{2008--2010}{GPA: 97\%}{University Transition Program}{Vancouver}{Top Male Graduate}{}}
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Notable Projects}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\textbf{MD/PhD Project (Ongoing):} \textit{'CellAssign: Computational identification of known cell types in single cell transcriptome data using marker genes'}
+
+\vspace{3pt}
+
+\small{Description}}
+
+\vspace{6pt}
+
+\item{\textbf{MD/PhD Project (Ongoing):} \textit{'Interfaces of malignant and immunologic clonal dynamics in high-grade serous ovarian cancer'}
+
+\vspace{3pt}
+
+\small{Description}}
+
+\vspace{6pt}
+
+\item{\textbf{Wasserman Lab:} \textit{'Cis-regulatory mechanisms of gene expression alterations in B cell lymphomas'}
+
+\vspace{3pt}
+
+\small{Description}}
+
+\vspace{6pt}
+
+\item{\textbf{Wasserman Lab (NSERC):} \textit{'Computational identification of transcription factor binding sites from whole-genome sequence data'}
+
+\vspace{3pt}
+
+\small{Description}}
+
+
+\end{itemize}
+
+\section{Honours and Awards}
+
+\begin{itemize}
+    \item{\cvitem{Canadian Conference on Ovarian Cancer Research Oral Presentation Award (\$200)}{\hfill 2018}}
+    \item{\cvitem{Canadian Conference on Ovarian Cancer Research Travel Award (\$500)}{\hfill 2018}}
+    \item{\cvitem{BIG Research Day Poster Presentation Award (\$50)}{\hfill 2018}}
+    \item{\cvitem{Sing Tao Ambassador Award, Top 10}{\hfill 2017}}
+    \item{\cvitem{CIHR Vanier Scholarship (\$50,000/year)}{\hfill 2016-2019}}
+    \item{\cvitem{UBC Four Year Fellowship (4YF, \$18,200/year)}{\hfill 2016-2020}}
+    \item{\cvitem{Elwyn Gregg Memorial Fellowship (\$5,000)}{\hfill 2015}}
+    \item{\cvitem{Faculty of Science Graduate Award (\$3,236)}{\hfill 2015}}
+    \item{\cvitem{CIHR CGS-M Scholarship (\$17,500)}{\hfill 2015-2016}}
+    \item{\cvitem{Faculty of Medicine Graduate Award (\$4,072)}{\hfill 2014}}
+    \item{\cvitem{Faculty of Science Graduate Award (\$3,407)}{\hfill 2014}}
+    \item{\cvitem{CFRI Summer Student Scholarship (\$3,750)}{\hfill 2014}}
+    \item{\cvitem{BC Children's Hospital Research-CIHR-UBC MD/PhD Scholarship (\$21,000/year)}{\hfill 2013-2021}}
+    \item{\cvitem{Ward-Essof Scholarship (\$965)}{\hfill 2013}}
+    \item{\cvitem{Pacific Blue Cross Medical Entrance Scholarship (\$1,000)}{\hfill 2013}}
+    \item{\cvitem{BC Clinical Genomics Network Training Award (\$3,750)}{\hfill 2013}}
+    \item{\cvitem{Charles and Jane Banks Scholarship (\$1,000)}{\hfill 2013}}
+    \item{\cvitem{UBC Trek Excellence Scholarship (\$1,500)}{\hfill 2012}}
+    \item{\cvitem{NSERC Summer Studentship (\$4,500)}{\hfill 2012}}
+    \item{\cvitem{UBC Trek Excellence Scholarship (\$1,500)}{\hfill 2011}}
+    \item{\cvitem{Larry Roberts Science One Memorial Scholarship (\$1,000)}{\hfill 2011}}
+    \item{\cvitem{Janusz J. Klawe Memorial Science One Scholarship (\$900)}{\hfill 2010}}
+    \item{\cvitem{J. Fred Muir Memorial Scholarship in Science (\$1,000)}{\hfill 2010}}
+    \item{\cvitem{President's Entrance Scholarship (\$2,500)}{\hfill 2010}}
+    \item{\cvitem{British Columbia Government Scholarship (\$1,000)}{\hfill 2010}}
+    \item{\cvitem{Passport to Education (\$500)}{\hfill 2010}}
+    \item{\cvitem{3rd place in BC, Euclid Mathematics Contest (\$1,000)}{\hfill 2010}}
+    \item{\cvitem{1st place, BC's Brightest Minds Physics Competition (\$1,500)}{\hfill 2010}}
+    \item{\cvitem{1st place in BC, Michael Smith Science Challenge (\$100)}{\hfill 2009}}
+    \item{\cvitem{Genome BC Award (\$50)}{\hfill 2009}}
+\end{itemize}
+
+\section{Selected Publications}
+\nocite{*}
+\bibliographystyle{plainyrres}
+\bibliography{selectedpubs}
+
+\section{Presentations}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{June 2018}{Chalk talk}{Systems Genetics of Cancer 2018}{Portland, USA}{}{Interfaces of malignant and immunologic clonal dynamics in ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{May 2018}{Oral presentation}{Canadian Conference for Ovarian Cancer Research 2018}{Edmonton, Canada}{}{The Evolutionary Interplay Between Lymphocytes and Cancer Cells in High-Grade Serous Ovarian Cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{March 2018}{Poster presentation (3rd place)}{BIG Research Day 2018}{Vancouver, Canada}{}{The evolutionary interplay between lymphocytes and cancer cells in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{January 2018}{Oral presentation (invited)}{Friesen Award Laureate Institutional Visit}{Vancouver, Canada}{}{The malignant-immune interface in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{November 2017}{Oral presentation}{Canadian Cancer Research Conference 2017}{Vancouver, Canada}{}{Spatiotemporal dynamics of tumour-infiltrating lymphocytes, mutational scars, and cancer clones in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{March 2017}{Oral and poster presentation (invited)}{BC Tech Summit 2017}{Vancouver, Canada}{}{Profiling clonal diversity at the single-cell level \& the effect of immune cells on tumour evolution in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{January 2017}{Oral presentation (invited)}{16th Annual Bellairs Workshop: Cancer and the Immune System}{Holetown, Barbados}{}{Tumour infiltrating lymphocytes and clonal evolution in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{April 2016}{Poster presentation}{AACR Annual General Meeting 2016}{New Orleans, Louisiana}{}{Properties of the immune microenvironment associated with clonal diversity in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{November 2015}{Poster presentation}{Clinician-Investigator Trainee Association of Canada AGM 2015}{Toronto, Canada}{}{Co-evolution of tumour-infiltrating lymphocytes and cancer clones in high-grade serous ovarian cancer}}
+
+\vspace{6pt}
+
+\item{\cventry{July 2014}{Poster presentation}{BC Children's Hospital Research Poster Day}{Vancouver, Canada}{}{}}
+
+\item{\cventry{July 2013}{Poster presentation}{BC Children's Hospital Research Poster Day}{Vancouver, Canada}{}{}}
+
+\item{\cventry{July 2012}{Poster presentation}{BC Children's Hospital Research Poster Day}{Vancouver, Canada}{}{}}
+
+\end{itemize}
+
+\section{Technical and Personal skills}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item \textbf{Programming Languages/Tools} \\ Proficient in: R (+ Rmarkdown), Python (+ Jupyter), TeX (+ beamer), Perl, snakemake, tensorflow, git, bash, conda \\ Competent with: C, C++, make, cwl \\ Basic ability with: Julia, Matlab, Javascript, Java, shiny
+
+\vspace{6pt}
+
+\item \textbf{Other Software Skills:} MS Word, Powerpoint, Excel, Adobe Illustrator
+
+
+\end{itemize}
+
+\section{Interests and extra-curricular activity}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{Ongoing}{Performer's ARCT level (w/ Grade 10 theory requirements)}{Violinist}{Vancouver, Canada}{}{I have played the violin for 10+ years. I enjoy playing classical music (orchestral pieces and unaccompanied Bach) and trained under Amy Paster Levinson. I was a member of the \textbf{Sizzlers Fiddle Group}; during my time with the group we recorded 2 CDs, went on tours to Canada's East Coast (Halifax, Charlottetown, Fredericton), Victoria, and Seattle, and performed at the Vancouver Fringe Festival.}}
+
+\vspace{6pt}
+
+\item{\cventry{May 2015--December 2017}{Executive, Co-founder}{Genetics in Medicine Club}{Vancouver, Canada}{}{I helped develop the Genetics in Medicine seminar series. The goal of our seminar series was to enrich genetics education for medical students by inviting speakers that apply principles classical genetics and modern genomics in their everyday clinical practice or research.}}
+
+\vspace{6pt}
+
+\item{\cventry{May 2014--September 2015}{Co-founder, Events Co-ordinator}{Skin Cancer Awareness Network (SCAN)}{Vancouver, Canada}{}{I helped organize public events in Vancouver and presentations at secondary schools and community centres around the Lower Mainland to highlight skin care promotion and skin cancer awareness. I also trained undergraduate student volunteers and undergraduate student leaders (USLs) for presentations at secondary schools. I helped apply for and secure \textbf{UBC Teaching and Learning Enhancement Funding} (TLEF) as part of an initiative to create an open-access e-book to provide access to clinically relevant dermatology knowledge for medical students.}}
+
+\vspace{6pt}
+
+\item{\cventry{June 2013--August 2013}{Research Student}{Adams Lab (UBC)}{Vancouver, Canada}{}{I devised algorithms for analyzing \emph{cis}-regulatory alterations in \emph{Arabidopsis thaliana} with Dr. Keith Adams. The focus of this research was to study regulatory element evolution following genomic duplication events.}}
+
+\vspace{6pt}
+
+\item{\cventry{January 2013--September 2013}{Science Squad Manager}{Imagine UBC}{Vancouver, Canada}{}{I worked closely with a Science Squad Leader to train 8 Imagine UBC MUG Leaders for Imagine Day in September 2013. Worked with MUG Leaders to develop icebreaker activities, and led workshops on conflict resolution, teamwork, and campus tours. Each MUG Leader was responsible for supervising a group of 8-10 incoming UBC students.}}
+
+\vspace{6pt}
+
+\item{\cventry{July 2012--May 2013}{Graphics Designer}{The Fair Haven United Church Homes}{Vancouver, Canada}{}{I re-designed the resident booklet for senior home visitors and residents.}}
+
+\vspace{6pt}
+
+\item{\cventry{July 2012--May 2013}{Emergency Department Volunteer}{Richmond General Hospital}{Richmond, Canada}{}{I delivered meals and blankets to patients, interacted with patients and visitors in the waiting room, and assisted with wayfinding.}}
+
+\vspace{6pt}
+
+\item{\cventry{January 2012--April 2014}{Volunteer Leader}{UBC Math Circle}{Vancouver, Canada}{}{I served as an undergraduate leader for the UBC Math Circle, a group of mathematically-talented high school students selected by UBC professor Dr. George Bluman based on performance in national math competitions. I had participated in this group as a high school student (2010), and was nominated as a Leader in 2012 by Dr. Joel Feldman based on performance in MATH 226 (Honours Multivariable Calculus). I helped develop problem sets, led students through problems, and arranged for faculty speakers.}}
+
+\vspace{6pt}
+
+\item{\cventry{April 2011--December 2011}{Undergraduate Volunteer}{Gordon Lab}{Vancouver, Canada}{}{I helped cross and propagate \emph{Drosophila melanogaster} lines for neurobiological studies in Dr. Mike Gordon's lab at the Life Sciences Institute.}}
+
+\vspace{6pt}
+
+\item{\cventry{June 2010--April 2014}{Private Tutor}{Mathematics and Physics Tutoring}{Vancouver, Canada}{}{I tutored 2 students in Mathematics and Physics 11 and 12, along with AP Calculus BC.}}
+
+\vspace{6pt}
+
+\item{\cventry{June 2007--August 2013}{Website Designer}{Amati String Studio}{Vancouver, Canada}{}{I designed and maintained the websites \url{www.amatistringstudio.ca} and \url{www.sizzlersfiddlegroup.org}.}}
+
+\end{itemize}
+
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
