@@ -37,6 +37,14 @@
 
 \newcommand*{\keysocialsymbol}{{\small\faKey}~}
 
+\newcommand*{\cventrytwo}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{{#4}}%
+    \strut%
+    \ifx&#5&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#5\end{minipage}}\fi}}
+
 % personal data
 \name{Allen W}{Zhang}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
@@ -80,11 +88,15 @@
 
 \begin{itemize}
 
+\item{\cventry{July 2021--present}{Resident Physician}{Vancouver Coastal Health}{Vancouver, Canada}{}{\vspace{3pt}Starting Anatomical Pathology residency at UBC in July 2021!}}
+
+\vspace{6pt}
+
 \item{\cventry{September 2018--June 2019}{Graduate Research Assistant}{Memorial Sloan Kettering Cancer Center}{New York, USA}{Shah Lab}{\vspace{3pt}I undertook a research exchange during my MD/PhD degree to acquire experience conducting clinical trials analysis in ovarian cancer immunotherapy, while continuing single cell RNA-seq work in ovarian cancer and follicular lymphoma.}}
 
 \vspace{6pt}
 
-\item{\cventry{May 2015--present}{MD/PhD Student}{BC Cancer}{Vancouver, Canada}{Shah and Wasserman Labs}{\vspace{3pt}I am working on projects in cancer immunology and genomics, primarily in the context of ovarian cancer and lymphomas, using whole-genome sequencing, single cell transcriptomics, histologic image analysis, TCR- and BCR-sequencing, immunohistochemistry, and mutation signature analysis.}}
+\item{\cventry{May 2015--June 2021}{MD/PhD Student}{BC Cancer}{Vancouver, Canada}{Shah and Wasserman Labs}{\vspace{3pt}I am working on projects in cancer immunology and genomics, primarily in the context of ovarian cancer and lymphomas, using whole-genome sequencing, single cell transcriptomics, histologic image analysis, TCR- and BCR-sequencing, immunohistochemistry, and mutation signature analysis.}}
 
 \vspace{6pt}
 
@@ -114,7 +126,7 @@
 
 \begin{itemize}
 
-\item{\cventry{2014--present}{MD/PhD Candidate, Bioinformatics}{University of British Columbia}{Vancouver, Canada}{GPA: 97\%}{}}
+\item{\cventry{2014--2021}{MD/PhD Candidate, Bioinformatics}{University of British Columbia}{Vancouver, Canada}{GPA: 97\%}{}}
 
 \item{\cventry{2013--2014}{MD Candidate}{University of British Columbia}{Vancouver, Canada}{}{}}
 
@@ -170,42 +182,40 @@
 \section{Honours and Awards}
 
 \begin{itemize}
-    \item{\cvitem{Antonio and Iolanda Giuseppina Minicucci Award in Medicine (\$1875)}{\hfill 2020}}
-    \item{\cvitem{Dennis Harris Memorial Prize in Psychiatry (\$250)}{\hfill 2020}}
-    \item{\cvitem{Anita Unruh Prize for Ovarian Cancer Research (\$5,000)}{\hfill 2020}}
-    \item{\cvitem{BC Cancer Research Excellence Prize --- Lloyd Skarsgard Excellence Award (\$500)}{\hfill 2019}}
-    \item{\cvitem{BC Cancer Outstanding Trainee Publication (\$1,000)}{\hfill 2019}}
-    \item{\cvitem{CGS --- Michael Smith Foreign Study Supplement (\$6,000)}{\hfill 2018-2019}}
-    \item{\cvitem{Canadian Conference on Ovarian Cancer Research Oral Presentation Award (\$200)}{\hfill 2018}}
-    \item{\cvitem{Canadian Conference on Ovarian Cancer Research Travel Award (\$500)}{\hfill 2018}}
-    \item{\cvitem{BIG Research Day Poster Presentation Award (\$50)}{\hfill 2018}}
-    \item{\cvitem{Sing Tao Ambassador Award, Top 10}{\hfill 2017}}
-    \item{\cvitem{CIHR Vanier Scholarship (\$150,000)}{\hfill 2016-2019}}
-    \item{\cvitem{UBC Four Year Fellowship (4YF, \$72,800)}{\hfill 2016-2020}}
-    \item{\cvitem{Elwyn Gregg Memorial Fellowship (\$5,000)}{\hfill 2015}}
-    \item{\cvitem{Faculty of Science Graduate Award (\$3,236)}{\hfill 2015}}
-    \item{\cvitem{CIHR CGS-M Scholarship (\$17,500)}{\hfill 2015-2016}}
-    \item{\cvitem{Faculty of Medicine Graduate Award (\$4,072)}{\hfill 2014}}
-    \item{\cvitem{Faculty of Science Graduate Award (\$3,407)}{\hfill 2014}}
-    \item{\cvitem{CFRI Summer Student Scholarship (\$3,750)}{\hfill 2014}}
-    \item{\cvitem{BC Children's Hospital Research-CIHR-UBC MD/PhD Scholarship (\$126,000)}{\hfill 2013-2021}}
-    \item{\cvitem{Ward-Essof Scholarship (\$965)}{\hfill 2013}}
-    \item{\cvitem{Pacific Blue Cross Medical Entrance Scholarship (\$1,000)}{\hfill 2013}}
-    \item{\cvitem{BC Clinical Genomics Network Training Award (\$3,750)}{\hfill 2013}}
-    \item{\cvitem{Charles and Jane Banks Scholarship (\$1,000)}{\hfill 2013}}
-    \item{\cvitem{UBC Trek Excellence Scholarship (\$1,500)}{\hfill 2012}}
-    \item{\cvitem{NSERC Summer Studentship (\$4,500)}{\hfill 2012}}
-    \item{\cvitem{UBC Trek Excellence Scholarship (\$1,500)}{\hfill 2011}}
-    \item{\cvitem{Larry Roberts Science One Memorial Scholarship (\$1,000)}{\hfill 2011}}
-    \item{\cvitem{Janusz J. Klawe Memorial Science One Scholarship (\$900)}{\hfill 2010}}
-    \item{\cvitem{J. Fred Muir Memorial Scholarship in Science (\$1,000)}{\hfill 2010}}
-    \item{\cvitem{President's Entrance Scholarship (\$2,500)}{\hfill 2010}}
-    \item{\cvitem{British Columbia Government Scholarship (\$1,000)}{\hfill 2010}}
-    \item{\cvitem{Passport to Education (\$500)}{\hfill 2010}}
-    \item{\cvitem{3rd place in BC, Euclid Mathematics Contest (\$1,000)}{\hfill 2010}}
-    \item{\cvitem{1st place, BC's Brightest Minds Physics Competition (\$1,500)}{\hfill 2010}}
-    \item{\cvitem{1st place in BC, Michael Smith Science Challenge (\$100)}{\hfill 2009}}
-    \item{\cvitem{Genome BC Award (\$50)}{\hfill 2009}}
+    \item{\cventrytwo{Antonio and Iolanda Giuseppina Minicucci Award (\$1875)}{}{\hfill 2020}{3 awards for 3rd/4th year MD students for outstanding academic achievement with demonstrated service to the community}{}{}}
+    \item{\cventrytwo{Dennis Harris Memorial Prize in Psychiatry (\$250)}{}{\hfill 2020}{Awarded to one 3rd year MD student who excels at Psychiatry}{}{}}
+    \item{\cventrytwo{Anita Unruh Prize for Ovarian Cancer Research (\$5,000)}{}{\hfill 2020}{One national prize awarded every 2 years for excellence in ovarian cancer research by a trainee}{}{}}
+    \item{\cventrytwo{BC Cancer Research Excellence Prize --- Lloyd Skarsgard Excellence Award (\$500)}{}{\hfill 2020}{Annual prize awarded for research excellence by a graduating BC Cancer trainee}{}{}}
+    \item{\cventrytwo{BC Cancer Outstanding Trainee Publication (\$1,000)}{}{\hfill 2019}{Annual prize awarded for an outstanding research publication by a BC Cancer trainee}{}{}}
+    \item{\cventrytwo{CGS --- Michael Smith Foreign Study Supplement (\$6,000)}{}{\hfill 2018-2019}{Competitive award for graduate students to pursue research internationally}{}{}}
+    \item{\cventrytwo{Canadian Conference on Ovarian Cancer Research Oral Presentation Award (\$200)}{}{\hfill 2018}{Oral presentation award for the CCOCR conference}{}{}}
+    \item{\cventrytwo{Canadian Conference on Ovarian Cancer Research Travel Award (\$500)}{}{\hfill 2018}{Travel award for the CCOCR conference, based on submitted abstracts}{}{}}
+    \item{\cventrytwo{BIG Research Day Poster Presentation Award (\$50)}{}{\hfill 2018}{Poster presentation award for the annual UBC Bioinformatics Research Day}{}{}}
+    \item{\cventrytwo{CIHR Vanier Scholarship (\$150,000)}{}{\hfill 2016-2019}{Prize of \$50000/yr for the most competitive doctoral students in Canada}{}{}}
+    \item{\cventrytwo{UBC Four Year Fellowship (4YF, \$72,800)}{}{\hfill 2016-2020}{UBC Award for academic excellence among graduate students}{}{}}
+    \item{\cventrytwo{Elwyn Gregg Memorial Fellowship (\$5,000)}{}{\hfill 2015}{Awarded to the best graduate talent across faculties in UBC}{}{}}
+    \item{\cventrytwo{Faculty of Science Graduate Award (\$3,236)}{}{\hfill 2015}{Graduate award for the Faculty of Science at UBC}{}{}}
+    \item{\cventrytwo{CIHR CGS-M Scholarship (\$17,500)}{}{\hfill 2015-2016}{National award for the most competitive Masters' and first-year doctoral students in Canada}{}{}}
+    \item{\cventrytwo{Faculty of Medicine Graduate Award (\$4,072)}{}{\hfill 2014}{Graduate award for the Faculty of Medicine at UBC}{}{}}
+    \item{\cventrytwo{Faculty of Science Graduate Award (\$3,407)}{}{\hfill 2014}{Graduate award for the Faculty of Science at UBC}{}{}}
+    \item{\cventrytwo{CFRI Summer Student Scholarship (\$3,750)}{}{\hfill 2014}{Annual competition for students participating in research at BC Children's Hospital}{}{}}
+    \item{\cventrytwo{Ward-Essof Scholarship (\$965)}{}{\hfill 2013}{For undergraduate students in any Faculty at UBC}{}{}}
+    \item{\cventrytwo{Pacific Blue Cross Medical Entrance Scholarship (\$1,000)}{}{\hfill 2013}{Awarded to one student entering UBC Medicine on the basis of outstanding promise and personal qualities. Recommendation made by the Dean of Medicine and Selection Committee}{}{}}
+    \item{\cventrytwo{BC Clinical Genomics Network Training Award (\$3,750)}{}{\hfill 2013}{Awarded to an undergraduate student pursuing genomics research}{}{}}
+    \item{\cventrytwo{Charles and Jane Banks Scholarship (\$1,000)}{}{\hfill 2013}{UBC award based on academic achievement}{}{}}
+    \item{\cventrytwo{UBC Trek Excellence Scholarship (\$1,500)}{}{\hfill 2012}{Annually awarded UBC scholarship for the top 5\% of domestic undergraduate students}{}{}}
+    \item{\cventrytwo{NSERC Summer Studentship (\$4,500)}{}{\hfill 2012}{National scholarship awarded to students based on academic record and research aptitude}{}{}}
+    \item{\cventrytwo{UBC Trek Excellence Scholarship (\$1,500)}{}{\hfill 2011}{Annually awarded UBC scholarship for the top 5\% of domestic undergraduate students}{}{}}
+    \item{\cventrytwo{Larry Roberts Science One Memorial Scholarship (\$1,000)}{}{\hfill 2011}{Award made on the recommendation of the Science One Faculty and Director, based on academic excellence and an inquisitive mind}{}{}}
+    \item{\cventrytwo{Janusz J. Klawe Memorial Science One Scholarship (\$900)}{}{\hfill 2010}{Awarded to a student entering Science One, made on recommendation of the Science One Director}{}{}}
+    \item{\cventrytwo{J. Fred Muir Memorial Scholarship in Science (\$1,000)}{}{\hfill 2010}{Offered to students in the UBC Faculty of Science based on academic performance}{}{}}
+    \item{\cventrytwo{President's Entrance Scholarship (\$2,500)}{}{\hfill 2010}{BC provincial university entrance scholarship}{}{}}
+    \item{\cventrytwo{British Columbia Government Scholarship (\$1,000)}{}{\hfill 2010}{BC provincial scholarship for performance on Provincial Exams}{}{}}
+    \item{\cventrytwo{Passport to Education (\$500)}{}{\hfill 2010}{BC provincial scholarship for secondary school performance}{}{}}
+    \item{\cventrytwo{3rd place in BC, Euclid Mathematics Contest (\$1,000)}{}{\hfill 2010}{Monetary award for top performance on the national Euclid Mathematics Competition (Grade 12)}{}{}}
+    \item{\cventrytwo{1st place, BC's Brightest Minds Physics Competition (\$1,500)}{}{\hfill 2010}{Monetary award for winning 1st place in the BC's Brightest Minds Physics Competition}{}{}}
+    \item{\cventrytwo{1st place in BC, Michael Smith Science Challenge (\$100)}{}{\hfill 2010}{Monetary award for winning 1st place in BC in the national Michael Smith Science Challenge}{}{}}
+    \item{\cventrytwo{Genome BC Award (\$50)}{}{\hfill 2009}{Regional award for genetics research at the Greater Vancouver Science Fair}{}{}}
 \end{itemize}
 
 \section{Publications}
@@ -229,6 +239,10 @@
 \vspace{6pt}
 
 \begin{itemize}
+
+\item{\cventry{May 2021}{Oral presentation (invited)}{Virtual Canadian Conference for Ovarian Cancer Research 2021}{Virtual}{}{Interfaces of malignant and immunologic clonal dynamics in ovarian cancer}}
+
+\vspace{6pt}
 
 \item{\cventry{February 2019}{Poster presentation}{11th Annual AACR/JCA Joint Conference on Breakthroughs in Cancer Research}{Maui, USA}{}{Probabilistic cell type assignment of single-cell transcriptomic data reveals temporal microenvironment dynamics in follicular lymphoma}}
 
